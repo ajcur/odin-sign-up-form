@@ -70,14 +70,14 @@ body {
     background-size: cover;
     color: white;
     height: 100vh;
-    width: clamp(200px, 50%, 400px);
+    width: clamp(200px, 50%, 600px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
     
-    a {
-    color: white;
-    }
+.sidebar a {
+color: white;
 }
 
 .logo-bg {
@@ -91,7 +91,7 @@ body {
     font-family: 'norse-bold';
     font-size: 4rem;
     position: relative;
-    top: 22vh;
+    top: 18vh;
 }
 
 .logo-img {
@@ -107,24 +107,76 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-/*     justify-content:space-between; */
     width: max(calc(100vw - 400px), 50%);
-    background-color: #E5E7EB;
+    background-color: #eff0f2;
 }
 
-header {
-    font-size: 1rem;
-    line-height: 1.2;
-    font-weight: 700;
-    padding: 1rem 0;
-    height: 22vh;
+.main-content header {
+    font-size: 1.4rem;
+    line-height: 1.1;
+    font-weight: bold;
+    height: calc(18vh + 6rem);
+}
 
-    p {
-        padding: 0.3rem 0;
-    }
+.main-content header p {
+    padding: 1rem 0;
+    max-width: 58ch;
+}
+
+.main-content header p:first-of-type {
+    margin-top: 1.5rem;
+}
+
+.main-content header,
+.main-content footer {
+    padding: 2rem;
 }
 
 .form-box {
-    padding: 1rem;
     background-color: white;
+    padding: 2rem;
+}
+
+.form-box p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 4rem;
+    margin: 1rem 0;
+}
+
+.form-row label {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
+}
+
+.form-row input {
+    border: #E5E7EB 1px solid;
+    border-radius: 5px;
+}
+
+.main-content footer button {
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    border: none;
+}
+
+.main-content footer a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-content footer p {
+margin: 2rem 0;
 }
