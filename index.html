@@ -25,27 +25,27 @@
             <p>Let's do this!</p>
             <form action="#" method="get" id="sign-up-form">
                 <div class="form-row">
-                    <label for="first-name">FIRST NAME
-                        <input type="text" id="first-name" name="first-name">
+                    <label for="first-name">FIRST NAME*
+                        <input type="text" id="first-name" name="first-name" required>
                     </label>
                     <label for="last-name">LAST NAME
                         <input type="text" id="last-name" name="last-name">
                     </label>
                 </div>
                 <div class="form-row">
-                    <label for="email">E-MAIL
-                        <input type="email" id="email" name="email">
+                    <label for="email">E-MAIL*
+                        <input type="email" id="email" name="email" required>
                     </label>
                     <label for="phone">PHONE NUMBER
                         <input type="tel" id="phone" name="phone-nr">
                     </label>
                 </div>
                 <div class="form-row">
-                    <label for="password">PASSWORD
-                        <input type="password" id="password" name="password">
+                    <label for="password">PASSWORD*
+                        <input type="password" id="password" name="password" minlength="6" required>
                     </label>
-                    <label for="confirm-pw">CONFIRM PASSWORD
-                        <input type="password" id="confirm-pw" name="confirm-pw">
+                    <label for="confirm-pw">CONFIRM PASSWORD*
+                        <input type="password" id="confirm-pw" name="confirm-pw" minlength="6" required>
                     </label>
                 </div>
             </form>

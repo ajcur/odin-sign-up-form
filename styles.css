@@ -135,6 +135,7 @@ color: white;
 .form-box {
     background-color: white;
     padding: 2rem;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.1);
 }
 
 .form-box p {
@@ -158,8 +159,17 @@ color: white;
 }
 
 .form-row input {
-    border: #E5E7EB 1px solid;
+    border: 1px solid #E5E7EB;
     border-radius: 5px;
+}
+
+.form-row input:invalid {
+    outline: 1px solid red;
+}
+
+.form-row input:focus {
+    outline: 1px solid blue;
+    box-shadow: 3px 3px 2px rgb(0, 0, 0, 0.2)
 }
 
 .main-content footer button {
@@ -169,6 +179,7 @@ color: white;
     border-radius: 5px;
     padding: 0.5rem 2rem;
     border: none;
+    margin-top: 1rem;
 }
 
 .main-content footer a {
