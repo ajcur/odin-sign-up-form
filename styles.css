@@ -60,13 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     display: flex;
-    align-items: center;
     margin: 0;
     padding: 0;
-}
-
-a {
-    color: white;
+    font-family: sans-serif;
 }
 
 .sidebar {
@@ -74,10 +70,14 @@ a {
     background-size: cover;
     color: white;
     height: 100vh;
-    width: min(50%, 400px);
+    width: clamp(200px, 50%, 400px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    a {
+    color: white;
+    }
 }
 
 .logo-bg {
@@ -102,4 +102,29 @@ a {
     text-align: center;
     padding: 0.5rem;
     font-size: 0.7rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+/*     justify-content:space-between; */
+    width: max(calc(100vw - 400px), 50%);
+    background-color: #E5E7EB;
+}
+
+header {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 1rem 0;
+    height: 22vh;
+
+    p {
+        padding: 0.3rem 0;
+    }
+}
+
+.form-box {
+    padding: 1rem;
+    background-color: white;
 }
