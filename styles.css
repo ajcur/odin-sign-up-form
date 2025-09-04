@@ -63,13 +63,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    height: 100vh;
 }
 
 .sidebar {
     background-image: url('./assets/bg-image.jpg');
     background-size: cover;
     color: white;
-    height: 100vh;
     width: clamp(200px, 50%, 600px);
     display: flex;
     flex-direction: column;
